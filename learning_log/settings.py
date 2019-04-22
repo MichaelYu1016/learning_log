@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #第三方库
+    'bootstrap4',
     #My apps
     'learning_logs',
     'users'
@@ -122,3 +124,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 我的设置
+LOGIN_URL = '/users/login/'
+
+# django-bootstrap4设置
+BOOTSTRAP4 = {
+    'include_jquery': True,
+}

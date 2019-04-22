@@ -4,3 +4,5 @@
 ---
 In this project, I use the Django 2.x, but  the author use the Django 1.x in the book. So there are some changes for the package and functions.
 
+* I use bootstrap4 instead of bootstrap3 to design the html, so the tags has many changes.
+
