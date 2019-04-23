@@ -17,7 +17,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="{% url 'learning_logs:index' %}">Learning Log</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleDemo02" aria-controls="navbarToggleDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleDemo02" aria-controls="navbarToggleDemo02"
+                aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div id="navbarToggleDemo02" class="collapse navbar-collapse">
@@ -30,10 +32,10 @@
           <ul class="navbar-nav ml-auto">
             {%  if user.is_authenticated %}
               <span class="navbar-text">Hello, {{ user.username }}.</span>
-              <li class="nav-item active"><a class="nav-link" href="{% url 'users:logout' %}">log out</a></li>
+              <li class="nav-item active"><a class="nav-link" href="{% url 'users:logout' %}">Log out</a></li>
             {% else %}
-              <li class="nav-item active"><a class="nav-link" href="{% url 'users:register' %}">register</a></li>
-              <li class="nav-item active"><a class="nav-link" href="{% url 'users:login' %}">log in</a></li>
+              <li class="nav-item active"><a class="nav-link" href="{% url 'users:register' %}">Register</a></li>
+              <li class="nav-item active"><a class="nav-link" href="{% url 'users:login' %}">Log in</a></li>
             {% endif %}
           </ul>
         </div><!--/.nav-collapse -->
@@ -41,10 +43,10 @@
     </nav>
 
     <div class="container">
-      <div class="page-header">
+      <div class="border-bottom mt-4">
         {% block header %}{% endblock header %}
       </div>
-      <div>
+      <div class="mt-2">
         {% block content %}{% endblock content %}
       </div>
     </div><!-- /container -->

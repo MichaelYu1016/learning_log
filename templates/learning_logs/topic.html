@@ -12,16 +12,16 @@
     {% endblock header %}
 
     {% block content %}
-      <p>
-        <a href="{% url 'learning_logs:new_entry' topic.id %}"><button type="button" class="btn">add new entry</button></a>
-      </p>
+      <div class="mt-2 mb-2">
+        <a href="{% url 'learning_logs:new_entry' topic.id %}"><button type="button" class="btn btn-sm">add new entry</button></a>
+      </div>
       {% for entry in entries %}
         <div class="card">
           <div class="card-header">
             <h3>
               {{ entry.date_added|date:'M d, Y H:i' }}
               <small>
-                <a href="{% url 'learning_logs:edit_entry' entry.id %}"><button type="button" class="btn">edit entry</button></a>
+                <a href="{% url 'learning_logs:edit_entry' entry.id %}"><button type="button" class="btn btn-sm">edit entry</button></a>
               </small>
             </h3>
           </div>
