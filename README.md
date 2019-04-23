@@ -2,7 +2,6 @@
 ---
 ### Description: This project is from *Python Crash Course: A Hands-on, Project-Based Introduction to Programming*.
 ---
-In this project, I use the Django 2.x, but  the author use the Django 1.x in the book. So there are some changes for the package and functions.
-
-* I use bootstrap4 instead of bootstrap3 to design the html, so the tags has many changes.
+* The author use the Django 1.8 in the book but I use the Django 2.x. So there are some changes for the package and functions.
+* I use bootstrap4 instead of bootstrap3 to design the html.
 
